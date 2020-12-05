@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "news-7a2d0": {
+      "hosting": {
+        "google-news": [
+          "news-7a2d0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "news-7a2d0"
+  }
+}

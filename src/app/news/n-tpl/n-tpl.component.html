@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container-fluid p-0 m-0">
+    <div class="row p-0 m-0">
+        <div class="col-3 p-0 m-0">
+            <div class="w-100 slide-container">
+                <div class="slide-row" routerLink="/news/list" routerLinkActive="slide-active">
+                    <span></span>
+                    Noticias
+                </div>
+                <div class="slide-row" routerLink="/news/new" routerLinkActive="slide-active">
+                    <span></span>
+                    Agregar Noticia
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container-fluid d-flex card-new-container">
+  <div class="card-new-content">
+    <h1>{{ actualNew.title }}</h1>
+    <h2>{{ actualNew.date | date }}</h2>
+    <h3>{{ actualNew.description }}</h3>
+    <div class="container-fluid d-flex mt-3">
+      <div class="nav-menu blue" (click)="onUpdate()">
+        <img src="../../../assets/img/editar.svg" width="17px">
+      </div>
+      <div class="ml-3 nav-menu red" (click)="onDelete()">
+        <img src="../../../assets/img/eliminar.svg" width="17px">
+      </div>
+    </div>
+  </div>
+  <div class="card-new-image">
+    <div class="square">
+      <div class="img-fondo" style="background-image: url({{actualNew.img}})"></div>
+    </div>
+  </div>
+</div>

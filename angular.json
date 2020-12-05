@@ -121,8 +121,13 @@
               "devServerTarget": "google-news:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "google-news"
 }

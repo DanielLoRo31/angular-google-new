@@ -1,0 +1,32 @@
+<div [formGroup]="form" class="d-flex align-items-center mt-3">
+  <div class="content-form-new">
+    <div class="form-group">
+      <label for="exampleInputtitle1">Titulo</label>
+      <input formControlName="title" type="text" class="form-control" id="exampleInputtitle1"
+        aria-describedby="titleHelp" placeholder="Enter title">
+      <div *ngIf="this.form.get('title').touched && this.form.get('title').invalid">
+        <small *ngIf="this.form.get('title').getError('required')"> El campo titulo es requerido </small>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputdescription1">Descripcion</label>
+      <input formControlName="description" type="text" class="form-control" id="exampleInputdescription1"
+        placeholder="Descripcion">
+      <div *ngIf="this.form.get('description').touched && this.form.get('description').invalid">
+        <small *ngIf="this.form.get('title').getError('required')"> El campo descripción es requerido </small>
+      </div>
+    </div>
+  </div>
+  <div class="content-img-square">
+    <input class="d-none" type="file" (change)="onChange($event)" id="fileId">
+    <div class="square">
+      <label class="image-button" style="background-image: url({{img}})" for="fileId"></label>
+    </div>
+  </div>
+</div>
+
+<button *ngIf="this.isNew; else teacherUpdate;" (click)="onAdd()" type="submit" class="btn btn-primary"> Agregar
+</button>
+<ng-template #teacherUpdate>
+  <button (click)="onUpdate()" type="submit" class="btn btn-primary"> Actualizar </button>
+</ng-template>

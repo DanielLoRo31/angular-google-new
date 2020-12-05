@@ -1,0 +1,137 @@
+.card-new-container {
+  margin: {
+    top: 10px
+  }
+
+  ;
+
+  padding: {
+    top: 15px;
+    bottom: 15px;
+    right: 0px;
+  }
+
+  ;
+  border: 1.5px solid #b1b1b15e;
+  border-radius: 10px;
+}
+
+.card-new-content {
+  width: calc(100% - 120px);
+}
+
+.card-new-image {
+  padding: {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+.img-fondo {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-position: center center;
+  background-size: auto 100%;
+  border-radius: 10px;
+}
+
+.square {
+  position: relative;
+  width: 100px;
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+h1 {
+  font-size: 1.2em;
+
+  margin: {
+    bottom: 5px;
+  }
+
+  ;
+}
+
+h2 {
+  margin: {
+    top: 0px
+  }
+
+  color: #acacac;
+
+  font: {
+    weight: 400;
+    size: .7em;
+
+  }
+}
+
+h3 {
+  position: relative;
+
+  font: {
+    size: .9em;
+  }
+
+  ;
+
+  margin: {
+    left: 20px;
+  }
+
+  ;
+
+}
+
+h3::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -12px;
+  right: 0px;
+  background: radial-gradient(circle at 3px 50%, #1967d2 3px, transparent 3px);
+}
+
+
+.nav-menu {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-menu:hover::before {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  z-index: -1;
+  cursor: pointer;
+}
+
+
+.nav-menu:active::before {
+  opacity: .5;
+}
+
+.blue::before {
+  background-color: #e3edfd;
+}
+.red::before {
+  background-color: #ea48391c;
+}

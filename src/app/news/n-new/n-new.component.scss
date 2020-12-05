@@ -1,0 +1,38 @@
+.square {
+  position: relative;
+  width: 180px;
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.image-button {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-position: center center;
+  background-size: 100% auto;
+  cursor: pointer;
+}
+
+.image-button:hover {
+  opacity: .7;
+}
+
+.content-form-new {
+  width: calc(100% - 200px)
+}
+
+.content-img-square {
+  padding: {
+    left: 10px;
+    right: 10px;
+  }
+
+  ;
+}

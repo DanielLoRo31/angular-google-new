@@ -1,0 +1,31 @@
+.slide-container {
+    height: calc(100vh - 63px);
+}
+
+.slide-row {
+    width: calc(100% - 20px);
+    margin: {
+        top: 10px;
+        right: 20px;
+    }
+    padding: {
+        left: 30px;
+        top: 12px;
+        bottom: 12px;
+    };
+    outline: none;
+    
+    font-weight: 500;
+}
+
+.slide-row:hover {
+    color: #1967d2;
+    cursor: pointer;
+}
+
+.slide-active {
+    border-radius: 0px 50px 50px 0px ;
+    background-color: #e3edfd;
+    color: #1967d2;
+    cursor: pointer;
+}
